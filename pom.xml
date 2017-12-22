@@ -7,23 +7,61 @@
 	<artifactId>spring-security-jwt</artifactId>
 	<version>1.1.0.BUILD-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Spring Security JWT Library</name>
 
+	<name>Spring Security JWT Library</name>
 	<description>Spring Security JWT is a small utility library for encoding and decoding JSON Web Tokens.
 	It belongs to the family of Spring Security crypto libraries that handle encoding and decoding text as
 	a general, useful thing to be able to do.</description>
 
 	<url>http://github.com/spring-projects/spring-security-oauth</url>
+
 	<organization>
 		<name>SpringSource</name>
 		<url>http://www.springsource.com</url>
 	</organization>
+
 	<licenses>
 		<license>
 			<name>Apache 2.0</name>
 			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 		</license>
 	</licenses>
+
+	<scm>
+		<url>http://github.com/spring-projects/spring-security-oauth</url>
+		<connection>scm:git:git://github.com/spring-projects/spring-security-oauth.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/spring-projects/spring-security-oauth.git</developerConnection>
+	</scm>
+
+	<developers>
+		<developer>
+			<id>tekul</id>
+			<name>Luke Taylor</name>
+			<email>ltaylor@vmware.com</email>
+		</developer>
+		<developer>
+			<id>dsyer</id>
+			<name>Dave Syer</name>
+			<email>dsyer@vmware.com</email>
+		</developer>
+	</developers>
+
+	<distributionManagement>
+		<site>
+			<id>static.springframework.org</id>
+			<url>scp://static.springframework.org/var/www/domains/springframework.org/static/htdocs/spring-security/oauth</url>
+		</site>
+		<repository>
+			<id>repo.spring.io</id>
+			<name>Spring Release Repository</name>
+			<url>https://repo.spring.io/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>repo.spring.io</id>
+			<name>Spring Snapshot Repository</name>
+			<url>https://repo.spring.io/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -121,27 +159,6 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
-
-		<site>
-			<id>static.springframework.org</id>
-			<url>scp://static.springframework.org/var/www/domains/springframework.org/static/htdocs/spring-security/oauth</url>
-		</site>
-
-		<repository>
-			<id>repo.spring.io</id>
-			<name>Spring Release Repository</name>
-			<url>https://repo.spring.io/libs-release-local</url>
-		</repository>
-
-		<snapshotRepository>
-			<id>repo.spring.io</id>
-			<name>Spring Snapshot Repository</name>
-			<url>https://repo.spring.io/libs-snapshot-local</url>
-		</snapshotRepository>
-
-	</distributionManagement>
-
 	<profiles>
 		<profile>
 			<id>central</id>
@@ -176,24 +193,5 @@
 			</build>
 		</profile>
 	</profiles>
-
-	<scm>
-		<url>http://github.com/spring-projects/spring-security-oauth</url>
-		<connection>scm:git:git://github.com/spring-projects/spring-security-oauth.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/spring-projects/spring-security-oauth.git</developerConnection>
-	</scm>
-
-	<developers>
-		<developer>
-			<id>tekul</id>
-			<name>Luke Taylor</name>
-			<email>ltaylor@vmware.com</email>
-		</developer>
-		<developer>
-			<id>dsyer</id>
-			<name>Dave Syer</name>
-			<email>dsyer@vmware.com</email>
-		</developer>
-	</developers>
 
 </project>
